@@ -1,0 +1,14 @@
+[package]
+name = "fnmock"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+fnmock-macro = { path = "fnmock-macro" }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt", "macros"] }
+
+[lib]
+name = "fnmock"
+path = "src/lib.rs"
